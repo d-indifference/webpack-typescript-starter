@@ -20,5 +20,5 @@ And it's ready for work!
 
 ### License
 
-Copyright © 2021, [Demon of Incuriosity](https://twitter.com/alba_sailor).
+Copyright © 2021, [Demon of Incuriosity](https://twitter.com/incuriosity_d).
 Released under the [MIT License](LICENSE).
