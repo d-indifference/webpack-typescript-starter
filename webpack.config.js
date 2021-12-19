@@ -22,7 +22,7 @@ const SERVER_PORT = 3000;
 
 module.exports = {
 	mode: Modes.IS_PRODUCTION ? 'production' : 'development',
-	entry: `${Paths.SRC}/index.ts`,
+	entry: path.resolve(Paths.SRC, 'index.ts'),
 	target: 'web',
 	devtool: Modes.IS_DEVELOPMENT ? 'source-map' : false,
 	devServer: {
@@ -43,13 +43,13 @@ module.exports = {
 	},
 	plugins: [
 		new HTMLWebpackPlugin({
-			template: `${Paths.SRC}/index.html`
+			template: path.resolve(Paths.SRC, 'index.html')
 		}),
 		new CleanWebpackPlugin(),
 		new CopyWebpackPlugin({
 			patterns: [
 				{
-					from: `${Paths.SRC}/favicon.ico`,
+					from: path.resolve(Paths.SRC, 'favicon.ico'),
 					to: Paths.DIST
 				}
 			]

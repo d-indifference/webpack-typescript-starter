@@ -7,7 +7,9 @@ Just clone or download, install and use it.
 
 ```sh
 $ git clone https://github.com/incuriosity-demon/webpack-typescript-starter
+$ cd webpack-typescript-starter
 $ npm i
+$ npm run start:dev
 ```
 And it's ready for work!
 

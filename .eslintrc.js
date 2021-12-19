@@ -2,13 +2,13 @@ module.exports = {
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		project: 'tsconfig.json',
-        tsconfigRootDir: __dirname,
-		sourceType: 'module',
+		tsconfigRootDir: __dirname,
+		sourceType: 'module'
 	},
 	plugins: ['@typescript-eslint/eslint-plugin'],
 	extends: [
 		'plugin:@typescript-eslint/recommended',
-		'plugin:prettier/recommended',
+		'plugin:prettier/recommended'
 	],
 	root: true,
 	env: {
@@ -22,15 +22,12 @@ module.exports = {
 		'array-callback-return': 'error',
 		'array-element-newline': 'off',
 		'arrow-body-style': 'off',
-		'arrow-parens': [
-			'error',
-			'as-needed'
-		],
+		'arrow-parens': ['error', 'as-needed'],
 		'arrow-spacing': [
 			'error',
 			{
-				'after': true,
-				'before': true
+				after: true,
+				before: true
 			}
 		],
 		'block-scoped-var': 'error',
@@ -43,8 +40,8 @@ module.exports = {
 		'comma-spacing': [
 			'error',
 			{
-				'after': true,
-				'before': false
+				after: true,
+				before: false
 			}
 		],
 		'comma-style': 'error',
@@ -63,10 +60,7 @@ module.exports = {
 		'func-call-spacing': 'error',
 		'func-name-matching': 'error',
 		'func-names': 'off',
-		'func-style': [
-			'error',
-			'expression'
-		],
+		'func-style': ['error', 'expression'],
 		'function-call-argument-newline': 'off',
 		'function-paren-newline': 'off',
 		'generator-star-spacing': 'error',
@@ -83,26 +77,24 @@ module.exports = {
 		'keyword-spacing': [
 			'error',
 			{
-				'after': true,
-				'before': true
+				after: true,
+				before: true
 			}
 		],
 		'line-comment-position': 'off',
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
+		'linebreak-style': ['error', 'unix'],
 		'lines-around-comment': 'warn',
 		'lines-between-class-members': 'warn',
 		'max-classes-per-file': 'off',
 		'max-depth': 'off',
 		'max-len': [
-			'warn', {
-				'code': 120,
-				'ignoreComments': true,
-				'ignoreUrls': true,
-				'ignoreTemplateLiterals': true,
-				'ignoreRegExpLiterals': true
+			'warn',
+			{
+				code: 120,
+				ignoreComments: true,
+				ignoreUrls: true,
+				ignoreTemplateLiterals: true,
+				ignoreRegExpLiterals: true
 			}
 		],
 		'max-lines': 'off',
@@ -205,10 +197,7 @@ module.exports = {
 		'no-whitespace-before-property': 'error',
 		'nonblock-statement-body-position': 'error',
 		'object-curly-newline': 'error',
-		'object-curly-spacing': [
-			'error',
-			'always'
-		],
+		'object-curly-spacing': ['error', 'always'],
 		'object-property-newline': 'off',
 		'object-shorthand': 'error',
 		'one-var': 'off',
@@ -238,18 +227,12 @@ module.exports = {
 		'rest-spread-spacing': 'error',
 		'semi': 'error',
 		'semi-spacing': 'error',
-		'semi-style': [
-			'error',
-			'last'
-		],
+		'semi-style': ['error', 'last'],
 		'sort-keys': 'off',
 		'sort-vars': 'off',
 		'space-before-blocks': 'error',
 		'space-before-function-paren': 'off',
-		'space-in-parens': [
-			'error',
-			'never'
-		],
+		'space-in-parens': ['error', 'never'],
 		'space-infix-ops': 'error',
 		'space-unary-ops': 'error',
 		'spaced-comment': 'error',
@@ -258,10 +241,7 @@ module.exports = {
 		'symbol-description': 'error',
 		'template-curly-spacing': 'error',
 		'template-tag-spacing': 'error',
-		'unicode-bom': [
-			'error',
-			'never'
-		],
+		'unicode-bom': ['error', 'never'],
 		'vars-on-top': 'error',
 		'wrap-iife': 'error',
 		'wrap-regex': 'error',
