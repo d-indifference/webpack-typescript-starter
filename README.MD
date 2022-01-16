@@ -6,7 +6,7 @@
 Just clone or download, install and use it.
 
 ```sh
-$ git clone https://github.com/incuriosity-demon/webpack-typescript-starter
+$ git clone https://github.com/d-indifference/webpack-typescript-starter
 $ cd webpack-typescript-starter
 $ npm i
 $ npm run start:dev
@@ -15,12 +15,12 @@ And it's ready for work!
 
 ### Author
 
-**Demon of Incuriosity**
+**Demon of Indifference**
 
-* [GitHub Profile](https://github.com/incuriosity-demon)
-* [Twitter Profile](https://twitter.com/incuriosity_d)
+* [GitHub Profile](https://github.com/d-indifference)
+* [Twitter Profile](https://twitter.com/d_indifference)
 
 ### License
 
-Copyright © 2021, [Demon of Incuriosity](https://twitter.com/incuriosity_d).
+Copyright © 2021, [Demon of Indifference](https://twitter.com/d_indifference).
 Released under the [MIT License](LICENSE).
