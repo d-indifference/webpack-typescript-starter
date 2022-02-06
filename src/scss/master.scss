@@ -1,0 +1,9 @@
+@import 'variables';
+
+body {
+	text-align: center;
+
+	.bottom-text {
+		color: $text-color;
+	}
+}
