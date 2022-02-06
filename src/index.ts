@@ -1,4 +1,4 @@
-import '@css/master.css';
+import '@scss/master.scss';
 import icon from './img/wepback.png';
 
 const title: HTMLElement | null = document.querySelector('.title');
@@ -16,4 +16,13 @@ if (body) {
 	);
 
 	body.insertAdjacentHTML('beforeend', `<img src="${icon}" alt="icon"/>`);
+
+	body.insertAdjacentHTML(
+		'beforeend',
+		`<p class="bottom-text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quia reprehenderit. 
+			Dignissimos dolores error harum laboriosam libero pariatur quae quas rem vel voluptates. 
+			Eius error eveniet minus necessitatibus sed. Error.
+		</p>`
+	);
 }
