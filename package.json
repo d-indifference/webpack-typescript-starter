@@ -13,7 +13,7 @@
 		"lint:fix": "eslint --fix ."
 	},
 	"keywords": [],
-	"author": "incuriosity-demon (https://github.com/d-indifference)",
+	"author": "d-indifference (https://github.com/d-indifference)",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -34,7 +34,11 @@
 		"eslint-webpack-plugin": "^3.1.1",
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^5.5.0",
+		"mini-css-extract-plugin": "^2.5.3",
+		"node-sass": "^7.0.1",
 		"prettier": "^2.5.1",
+		"sass-loader": "^12.4.0",
+		"scss-loader": "^0.0.1",
 		"style-loader": "^3.3.1",
 		"ts-loader": "^9.2.6",
 		"ts-node": "^10.4.0",

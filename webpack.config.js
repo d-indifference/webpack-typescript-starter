@@ -5,6 +5,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const miniCss = require('mini-css-extract-plugin');
 
 class Modes {
 	static IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
@@ -31,10 +32,11 @@ module.exports = {
 		static: true
 	},
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js', '.css'],
+		extensions: ['.tsx', '.ts', '.js', '.css', '.scss'],
 		alias: {
 			'@': Paths.SRC,
-			'@css': `${Paths.SRC}/css`
+			'@css': `${Paths.SRC}/css`,
+			'@scss': `${Paths.SRC}/scss`
 		}
 	},
 	output: {
@@ -59,6 +61,9 @@ module.exports = {
 			fix: true,
 			eslintPath: require.resolve('eslint'),
 			extensions: ['ts']
+		}),
+		new miniCss({
+			filename: Modes.IS_DEVELOPMENT ? 'master.css' : 'master.[hash].css'
 		})
 	],
 	module: {
@@ -78,8 +83,8 @@ module.exports = {
 				exclude: /node_modules/
 			},
 			{
-				test: /\.css$/,
-				use: ['style-loader', 'css-loader']
+				test: /\.(s*)css$/,
+				use: [miniCss.loader, 'css-loader', 'sass-loader']
 			},
 			{
 				test: /\.png$/,
