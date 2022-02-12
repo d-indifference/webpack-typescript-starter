@@ -21,6 +21,10 @@ class Paths {
 
 const SERVER_PORT = 3000;
 
+const cssLoaders = Modes.IS_DEVELOPMENT
+	? [miniCss.loader, 'css-loader', 'resolve-url-loader', 'sass-loader']
+	: [miniCss.loader, 'css-loader', 'sass-loader'];
+
 module.exports = {
 	mode: Modes.IS_PRODUCTION ? 'production' : 'development',
 	entry: path.resolve(Paths.SRC, 'index.ts'),
@@ -63,7 +67,9 @@ module.exports = {
 			extensions: ['ts']
 		}),
 		new miniCss({
-			filename: Modes.IS_DEVELOPMENT ? 'master.css' : 'master.[hash].css'
+			filename: Modes.IS_DEVELOPMENT
+				? 'master.css'
+				: 'master.[contenthash].css'
 		})
 	],
 	module: {
@@ -84,10 +90,10 @@ module.exports = {
 			},
 			{
 				test: /\.(s*)css$/,
-				use: [miniCss.loader, 'css-loader', 'sass-loader']
+				use: cssLoaders
 			},
 			{
-				test: /\.png$/,
+				test: /\.jpg$/,
 				loader: 'file-loader',
 				options: {
 					name: Modes.IS_DEVELOPMENT

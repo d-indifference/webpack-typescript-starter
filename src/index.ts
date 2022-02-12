@@ -1,5 +1,5 @@
 import '@scss/master.scss';
-import icon from './img/wepback.png';
+import icon from './img/wepback.jpg';
 
 const title: HTMLElement | null = document.querySelector('.title');
 
